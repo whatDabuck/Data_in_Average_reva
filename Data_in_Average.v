@@ -57,15 +57,6 @@ module Data_in_Average #
 		end
 	end
 
-	// Restore stx value
-	// always @ (posedge clk or posedge rst) begin
-	// 	if (rst) begin
-	// 		r_data_in_stx	<= 'd0;
-	// 	end else begin
-	// 		r_data_in_stx	<= w_data_in_stx;
-	// 	end
-	// end
-
 	assign o_cnt_flag	= (i_valid == 1) && (cnt_signal_i == 0);
 	assign w_data_in_stx = data_in + r_data_in_stx ;	
 	assign o_average =  r_average;
