@@ -1,0 +1,9 @@
+#Define Variables
+DESIGN_NAME="Data_in_Average"
+TESTBENCH_NAME="tb_${DESIGN_NAME}"
+
+#Run Commands using the variables
+xvlog ./${DESIGN_NAME}.v ./${TESTBENCH_NAME}.v
+xelab ${TESTBENCH_NAME} -debug wave -s ${TESTBENCH_NAME}
+#xsim tb_power_of_8 -R #do not check waveform
+xsim ${TESTBENCH_NAME} -gui -wdb simulate_xsim_${TESTBENCH_NAME}.wdb

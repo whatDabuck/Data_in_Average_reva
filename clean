@@ -1,0 +1,2 @@
+rm -rf *xe* *xs* *.wdb* *trace* *xv* *webtalk* *backup* *str*
+rm -rf rtl_v_result.txt

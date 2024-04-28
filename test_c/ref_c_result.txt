@@ -1,0 +1,4 @@
+Average = 2002
+Average = 2101
+Average = 2060
+Average = 2034
